@@ -1,10 +1,10 @@
 #include <WiFi.h>
 
 // Replace with your network credentials (STATION)
-const char* ssid = "REPLACE_WITH_YOUR_SSID";
-const char* password = "REPLACE_WITH_YOUR_PASSWORD";
+const char* ssid = "trashtaste";
+const char* password = "26Onyicasio";
 
-String hostname = "ESP32 Node Temperature";
+String hostname = "ESP32-myskill";
 
 void initWiFi() {
   WiFi.mode(WIFI_STA);

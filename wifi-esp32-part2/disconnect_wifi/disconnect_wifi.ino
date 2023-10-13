@@ -1,8 +1,7 @@
+#include "pass.h"
 #include <WiFi.h>
 
-// Replace with your network credentials
-const char* ssid = "albus";
-const char* password = "test123455";
+
 
 void setup() {
   Serial.begin(115200);
@@ -29,7 +28,7 @@ void loop() {
 
   // Wait for disconnection to complete
   while (WiFi.status() == WL_CONNECTED) {
-    delay(100);
+    delay(5000);
   }
 
   Serial.println("Disconnected from Wi-Fi!");

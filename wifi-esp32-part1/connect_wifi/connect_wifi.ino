@@ -3,8 +3,8 @@
 struct tm timeinfo;
 unsigned long Epoch_Time; 
 
-const char* ssid = "albus";
-const char* password = "test123455";
+const char* ssid = "myskill";
+const char* password = "myskill123";
 
 void setup() {
   Serial.begin(115200);

@@ -1,3 +1,4 @@
+#include "pass.h"
 #include <WiFi.h>
 #include <WiFiMulti.h>
 
@@ -12,9 +13,8 @@ void setup(){
   WiFi.mode(WIFI_STA);
   
   // Add list of wifi networks
-  wifiMulti.addAP("ssid_from_AP_1", "your_password_for_AP_1");
-  wifiMulti.addAP("ssid_from_AP_2", "your_password_for_AP_2");
-  wifiMulti.addAP("ssid_from_AP_3", "your_password_for_AP_3");
+  wifiMulti.addAP("albus","test123455" );
+  wifiMulti.addAP(ssid, password);
 
   // WiFi.scanNetworks will return the number of networks found
   int n = WiFi.scanNetworks();

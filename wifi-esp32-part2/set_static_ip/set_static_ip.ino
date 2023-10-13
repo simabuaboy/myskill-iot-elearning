@@ -1,14 +1,14 @@
+#include "pass.h"
 #include <WiFi.h>
 #include <WebServer.h>
 
 // Replace with your network credentials
-const char* ssid = "albus";
-const char* password = "test123455";
+
 
 // Replace with your static IP address configuration
 
-IPAddress staticIP(192, 168, 192, 50);
-IPAddress gateway(192,168,192,32);
+IPAddress staticIP(192, 168, 100, 50); 
+IPAddress gateway(192,168,100,1);
 IPAddress subnet(255, 255, 255, 0);
 
 WebServer server(80);
